@@ -1,0 +1,23 @@
+/* src/App.css */
+
+.triangle-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.triangle {
+    position: absolute;
+    /* Для создания треугольников будем использовать CSS transform и background */
+    width: 0;
+    height: 0;
+    transform-origin: center center; /* Центр вращения */
+    z-index: 1;
+}
+
+.TextReveal {
+    display: inline-list-item;
+    /*background: rgba(14,26,46,.7);*/
+    z-Index: 10;
+}

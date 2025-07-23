@@ -1,0 +1,9 @@
+.textContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.Container{
+    margin-left: 5vh;
+    margin-right: 5vh;
+}

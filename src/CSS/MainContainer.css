@@ -1,0 +1,35 @@
+body {
+    background: black;
+}
+
+.MainContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 16.5vh;
+    z-index: 1;
+}
+
+.BackgroundContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(14,26,46, .8), rgba(129,24,132,.5));
+}
+
+.Biba{
+    width: 100%;
+    max-width: 100%;
+}
+
+.Content {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10vh;
+
+    width: 90%;
+    margin-top: 20vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
