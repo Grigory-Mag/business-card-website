@@ -3,14 +3,20 @@
 :root{
     --primary-color: #d0d8f0;
     --secondary-color: #8a91a9;
-    --text-color: #70798f;
+    --text-color: #EAEAEA;
     --accent-color: #73bda9;
-    --second-accent: #ff1940;
+    --second-accent: #FF0055;
     --success-color: #28a745;
     --danger-color: #dc3545;
     --background-light: #f8f9fa;
     --text-dark: #212529;
     --font-family: Inter, monospace;
+}
+
+/* --- Бонус: кастомный цвет выделения текста, чтобы он соответствовал дизайну --- */
+::selection {
+    background: rgba(255, 0, 85, 0.7); /* Ваш акцентный цвет с прозрачностью */
+    color: #FFFFFF;
 }
 
 * {
@@ -20,8 +26,9 @@
 }
 
 .parallax-img {
-    margin-top: 20vh;
-    margin-left: 5vh;
+    grid-row: 0;
+    grid-column: 2;
+    margin-top: -10vh;
     position: absolute;
     z-index: -1;
 }
@@ -37,9 +44,9 @@ header {
     position: fixed;
     text-align: center;
     font-size: xxx-large;
+    padding-bottom: -5vh;
     width: 100%;
-    margin-top: -5vh;
-    height: 30vh;
+    height: fit-content;
     background: linear-gradient(rgba(0,0,0, .8) 50%, rgba(14,21,36,.9));
     align-content: center;
     z-index: 2;
@@ -64,13 +71,7 @@ h1 {
     color: var(--primary-color);
     font-weight: 600;
     text-align: center;
-    margin-top: 10vh;
     font-size: xxx-large;
-    opacity: 0;
-    animation: ani 2.5s forwards;
-}
-
-.Pupa {
     opacity: 0;
     animation: ani 2.5s forwards;
 }
@@ -80,26 +81,26 @@ h1 {
     100% {opacity: 1;}
 }
 
-h2 {
+i {
     color: var(--accent-color);
+}
+
+h2 {
+    color: var(--second-accent);
     font-weight: 400;
     text-align: center;
     margin-top: 10vh;
     font-size: xxx-large;
-    text-decoration: underline rgba(0, 0, 0, 0);
     transition: text-decoration 500ms;
     opacity: 0;
     animation: ani 2.5s forwards;
 }
 
-h2:hover {
-    text-decoration: underline;
-}
-
-p {
+p, li {
     color: var(--text-color);
     text-align: left;
-    font-size: large;
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 hr {
@@ -108,4 +109,48 @@ hr {
     border-radius: 25vh;
     margin-left: 5vh;
     margin-right: 5vh;
+}
+
+/* --- Базовые стили для всех кнопок --- */
+button {
+    display: inline-block; /* Чтобы кнопка занимала место как текстовый элемент */
+    padding: 14px 32px; /* Внутренние отступы (вертикальный и горизонтальный) */
+    border: none;
+    border-radius: 50px; /* Создает "таблеточную" форму */
+
+    font-size: 1rem; /* Размер шрифта */
+    font-weight: 700; /* Жирное начертание */
+    text-decoration: none; /* Убираем подчеркивание, если это ссылка <a> */
+    cursor: pointer;
+
+    /* Плавный переход для всех анимаций */
+    transition: all 0.3s ease;
+}
+
+
+/* --- Стили для ОСНОВНОЙ кнопки --- */
+.btn-primary {
+    /* Яркий розовый цвет из вашего дизайна */
+    background-color: var(--second-accent); /* Подберите точный HEX вашего розового */
+    color: var(--text-color);
+
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+
+    /* Эффект свечения под кнопкой */
+    box-shadow: 0 4px 20px rgba(230, 46, 111, 0.35);
+}
+
+button:hover {
+    /* При наведении делаем ее чуть ярче и приподнимаем */
+    background-color: #f04d8a;
+    /*transform: translateY(-3px);*/
+    box-shadow: 0 7px 25px rgba(230, 46, 111, 0.45);
+}
+
+button:active {
+    /* При нажатии "вдавливаем" кнопку */
+    transform: translateY(0);
+    box-shadow: 0 4px 20px rgba(230, 46, 111, 0.35);
 }

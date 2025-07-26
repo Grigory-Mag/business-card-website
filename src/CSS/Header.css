@@ -3,7 +3,42 @@
     grid-template-columns: 50% 50%;
 }
 
+header p {
+    font-size: x-large;
+}
+
+header a {
+    width: fit-content;
+    margin: auto;
+}
+
+.avito-logo{
+    width: 4vh;
+    height: 4vh;
+    margin: auto;
+}
+
+.HeaderTitle {
+    opacity: 0;
+    animation: ani 2.5s forwards;
+}
+
 .Container{
+    margin-top: 2vh;
     margin-left: 5vh;
     margin-right: 5vh;
+}
+
+.content-grid {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 50% 50%;
+}
+
+.no-rows {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto;
+    width: auto;
+    height: fit-content;
 }

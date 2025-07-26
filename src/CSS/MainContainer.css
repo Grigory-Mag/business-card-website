@@ -2,19 +2,49 @@ body {
     background: black;
 }
 
+/* --- Главный контейнер --- */
 .MainContainer {
-    position: absolute;
+    /*
+    Убираем position: absolute. Теперь это обычный блочный элемент.
+    Он будет занимать столько высоты, сколько нужно его содержимому.
+    */
+    padding-top: 30vh;
     width: 100%;
-    height: 100%;
-    margin-top: 16.5vh;
-    z-index: 1;
+    min-height: 100vh; /* Контейнер будет МИНИМУМ высотой с экран, но сможет расти */
+    padding-bottom: 10vh; /* Добавляем отступ снизу */
+
+    /* ПЕРЕНОСИМ ФОН СЮДА. Теперь он будет растягиваться вместе с контейнером */
+    background: linear-gradient(rgba(14, 26, 46, .8), rgba(129, 24, 132, .5));
+
+    /* Важное свойство, чтобы padding не ломал размеры */
+    box-sizing: border-box;
+}
+
+
+/* --- Контейнер для контента --- */
+.Content {
+    /* Убираем position: absolute. Теперь это обычный дочерний элемент */
+    display: grid;
+
+    /* Используем фракции (fr) для более гибких колонок */
+    grid-template-columns: repeat(2, 1fr);
+
+    /* Используем rem для адаптивных отступов */
+    gap: 10rem;
+
+    /* Центрируем наш контент по горизонтали и задаем ему максимальную ширину */
+    width: 90%;
+    /*max-width: 1200px; !* Чтобы на очень широких экранах контент не растягивался *!*/
+
+    margin-left: 5vh;
+    margin-right: 5vh;
 }
 
 .BackgroundContainer{
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(14,26,46, .8), rgba(129,24,132,.5));
+    /*background: linear-gradient(rgba(14,26,46, .8), rgba(129,24,132,.5));*/
 }
 
 .Biba{
@@ -22,14 +52,12 @@ body {
     max-width: 100%;
 }
 
-.Content {
-    position: absolute;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 10vh;
+/*.Content .info-card:nth-child(odd) {*/
+/*    grid-column: 0; !* Поместить в первый столбец *!*/
+/*}*/
 
-    width: 90%;
-    margin-top: 20vh;
-    margin-left: 5vh;
-    margin-right: 5vh;
-}
+/*!* Правило для ЧЕТНЫХ карточек (2, 4, 6...) *!*/
+/*.Content .info-card:nth-child(even) {*/
+/*    grid-column: 2; !* Поместить во второй столбец *!*/
+/*    grid-row: 2;*/
+/*}*/

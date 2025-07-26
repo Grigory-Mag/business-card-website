@@ -1,0 +1,74 @@
+.info-card {
+    /* --- Эффект "матового стекла" (Glassmorphism) --- */
+
+    /* Полупрозрачный фон. Лучше использовать темный цвет из вашей палитры. */
+    background: rgba(25, 25, 35, 0.45); /* Темно-фиолетовый с прозрачностью */
+
+    /* Главный эффект - размытие фона ПОД элементом */
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+
+    /* --- Внешний вид и геометрия --- */
+
+    /* Скругленные углы для мягкости */
+    border-radius: 16px;
+
+    /* Тонкая, светлая рамка для имитации блика на стекле */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    /* Внутренние отступы, чтобы текст не прилипал к краям */
+    padding: 2rem;
+
+    /* Тень для придания объема и отрыва от фона */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+    height: fit-content;
+}
+
+/* --- Стилизация текста внутри карточки --- */
+
+.info-card h2 {
+    /* Используем ваш яркий акцентный цвет для заголовков */
+    margin-top: 0;
+    font-weight: 700; /* Делаем жирнее */
+    letter-spacing: 1px; /* Немного увеличим расстояние между буквами */
+}
+
+/* --- Стилизация изображения внутри карточки (если нужно) --- */
+.card-image {
+    width: 100%;
+    border-radius: 8px; /* Небольшое скругление для гармонии */
+    margin-top: 1.5rem;
+}
+
+.Content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 5vh;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+}
+
+.Content-inner .info-card {
+
+}
+
+.info-card button {
+
+}
+
+.info-card h2 {
+    font-size: xx-large;
+}
+
+.info-card img {
+    width: 100%;
+    height: 60%;
+}
+
+.info-card i {
+    font-size: 400%;
+    margin: auto;
+}
