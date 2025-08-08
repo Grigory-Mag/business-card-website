@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/InfoCard.css'; // Импортируем наши стили
+import '../../CSS/Old/InfoCard.css'; // Импортируем наши стили
 
 interface InfoCardProps {
     title: string;

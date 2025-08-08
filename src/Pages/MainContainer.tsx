@@ -1,9 +1,9 @@
 import React, {useEffect, useState, useRef, useCallback, CSSProperties} from 'react';
-import AboutUsTextBlock from "../Elements/AboutUs";
-import "../CSS/MainContainer.css"
+import AboutUsTextBlock from "../Elements/Old/AboutUs";
+import "../CSS/Old/MainContainer.css"
 import imageDev from "../Images/image-dev.png";
 import imageDevStages from "../Images/dev-stages.png";
-import InfoCard from "../Elements/InfoCard";
+import InfoCard from "../Elements/Old/InfoCard";
 import mobile from "../Images/mobile_app.png"
 
 // Добавляем обработчик события 'scroll' к объекту window

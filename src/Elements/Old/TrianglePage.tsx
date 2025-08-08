@@ -1,6 +1,6 @@
 import React, {useEffect, useState, useRef, useCallback, CSSProperties} from 'react';
-import Triangle from '../Elements/TriangleElement';
-import '../CSS/Triangle.css'; // Для базовых стилей контейнера
+import Triangle from './TriangleElement';
+import '../../CSS/Old/Triangle.css'; // Для базовых стилей контейнера
 
 const CONTAINER_WIDTH = window.innerWidth - 20;
 const CONTAINER_HEIGHT = window.innerHeight - 20;

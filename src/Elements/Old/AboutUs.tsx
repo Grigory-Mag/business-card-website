@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useRef, useCallback, CSSProperties} from 'react';
-import "../CSS/AboutUsBlock.css";
+import "../../CSS/Old/AboutUsBlock.css";
 
 interface AboutUsTextBlockProps {
     textBlock_1 : string;

@@ -1,0 +1,30 @@
+.content {
+    padding: 0 10px; /* Небольшие отступы, т.к. основные отступы в Modal */
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tag {
+    background-color: var(--primary-light-bg);
+    color: var(--text-secondary);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}

@@ -1,0 +1,67 @@
+.button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    /*
+      Добавляем плавный переход для всех анимируемых свойств.
+      Теперь он будет включать не только цвет, но и transform.
+    */
+    transition: all 0.2s ease-in-out;
+}
+
+/* --- Стили для основной кнопки --- */
+
+.primary {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    box-shadow: 0 4px 15px rgba(44, 62, 80, 0.2); /* Добавим легкую тень для объема */
+}
+
+.primary:hover {
+    opacity: 0.9;
+    /* При наведении кнопка будет слегка приподниматься */
+    transform: translateY(-2px);
+}
+
+.primary:active {
+    /* При нажатии кнопка будет "вдавливаться" и становиться чуть меньше */
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.2); /* Тень тоже уменьшается */
+    opacity: 1; /* Возвращаем полную непрозрачность для четкости клика */
+}
+
+
+/* --- Стили для второстепенной кнопки --- */
+
+.secondary {
+    background-color: var(--white);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.secondary:hover {
+    background-color: #f8f9fa;
+    border-color: #cdd7e1;
+    /* Так же приподнимаем кнопку */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.secondary:active {
+    /* И так же "вдавливаем" ее при клике */
+    transform: translateY(1px) scale(0.98);
+    background-color: #f1f3f5;
+    box-shadow: none; /* Убираем тень при нажатии */
+}
+
+/* Для иконки телеграма */
+.secondary svg {
+    margin-right: 8px;
+}

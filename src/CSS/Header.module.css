@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo img {
+    height: 40px; /* Подберите нужную высоту */
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.nav a:hover {
+    color: var(--text-primary);
+}
+
+.actions {
+    /* Пусто, так как кнопка уже имеет свои стили */
+}

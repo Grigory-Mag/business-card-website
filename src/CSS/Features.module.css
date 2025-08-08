@@ -1,0 +1,44 @@
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px 40px;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    margin-bottom: 10vh;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--primary-light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.feature h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}

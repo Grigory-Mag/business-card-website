@@ -2,18 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Header from "./Elements/Header";
-import TrianglePage from "./Elements/TrianglePage";
-import MainContainer from "./Pages/MainContainer";
+// import Header_old from "./Elements/Header_old";
+// import TrianglePage from "./Elements/TrianglePage";
+// import MainContainer from "./Pages/MainContainer";
+import MainPage from "./Pages/MainPage";
+import PortfolioPage from "./Pages/PortfolioPage";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-      <Header/>
-      <TrianglePage/>
-      <MainContainer/>
+      <MainPage/>
+      {/*<Header_old/>*/}
+      {/*<TrianglePage/>*/}
+      {/*<MainContainer/>*/}
 
   </React.StrictMode>
 );

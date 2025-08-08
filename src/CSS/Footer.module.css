@@ -1,0 +1,132 @@
+.footer {
+    background-color: #212a34; /* Темно-синий фон */
+    color: #e0e5ea; /* Светлый цвет текста */
+    padding: 60px 0;
+    font-size: 15px;
+}
+
+.container {
+    max-width: var(--container-width, 1200px);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Верхняя секция --- */
+.topSection {
+    display: grid;
+    /* Создаем сетку: 1-я колонка занимает 2 части, остальные по 1 */
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.logo {
+    height: 45px;
+    width: auto;
+}
+
+/* --- Навигация --- */
+.navColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.navColumn a {
+    color: #e0e5ea;
+    transition: color 0.2s ease;
+}
+
+.navColumn a:hover {
+    color: var(--white);
+}
+
+/* --- Контакты --- */
+.contactColumn h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.contactList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contactList li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contactList svg {
+    font-size: 18px;
+    flex-shrink: 0; /* Чтобы иконка не сжималась */
+    color: #8a99a8;
+}
+
+.contactList a {
+    color: #e0e5ea;
+    transition: color 0.2s ease;
+}
+
+.contactList a:hover {
+    color: var(--white);
+}
+
+.socialIcons {
+    display: flex;
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.socialIcons a {
+    color: #8a99a8;
+    font-size: 24px;
+    transition: color 0.2s ease;
+}
+
+.socialIcons a:hover {
+    color: var(--white);
+}
+
+/* --- Разделитель и нижняя секция --- */
+.divider {
+    border: none;
+    border-top: 1px solid #3a4652;
+    margin: 0 0 30px 0;
+}
+
+.bottomSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Для мобильных устройств */
+    gap: 20px;
+    font-size: 14px;
+    color: #8a99a8;
+}
+
+.bottomSection a {
+    color: #8a99a8;
+    transition: color 0.2s ease;
+}
+
+.bottomSection a:hover {
+    color: var(--white);
+}
+
+.bottomSection p {
+    margin: 0;
+    /* Чтобы копирайт был справа, а остальные ссылки слева */
+    margin-left: auto;
+}
+
+.innText {
+    color: #8a99a8;
+}
