@@ -1,0 +1,63 @@
+{
+  "header": {
+    "main": "Accueil",
+    "portfolio": "Portfolio",
+    "contacts": "Contact",
+    "discuss_project": "Discuter du projet"
+  },
+  "hero": {
+    "title": "Développement de systèmes CRM, d'applications mobiles Android et de sites web",
+    "subtitle": "Nous élaborons la logique et les processus, la conception, la programmation, les intégrations, les configurations et aidons à la mise en œuvre et au support.",
+    "calculate_cost": "Calculer le coût",
+    "write_telegram": "Écrire sur Telegram"
+  },
+  "features": {
+    "development_time_title": "Délai de développement — 3 semaines",
+    "development_time_desc": "Nous ajoutons votre logo, aidons à remplir les produits/services, les options de livraison et les informations de contact, puis nous publions l'application.",
+    "small_business_title": "Idéal pour les petites entreprises",
+    "small_business_desc": "Il n'est pas nécessaire de dépenser des sommes considérables ou six mois de temps pour le développement d'une application.",
+    "wide_possibilities_title": "Vastes possibilités",
+    "wide_possibilities_desc": "La version de base de l'application est très performante."
+  },
+  "portfolio_page": {
+    "title": "Nos projets",
+    "subtitle": "Nous sommes fiers de chaque ligne de code et de chaque pixel de notre travail.",
+    "all": "Tous",
+    "mobile": "Applications mobiles",
+    "crm": "CRM",
+    "web": "Sites web",
+    "portfolio_projects": {
+      "voice_sender": {
+        "title": "VoiceSender",
+        "description": "Un programme pour envoyer les enregistrements d'appels d'entreprise à un serveur distant de l'entreprise."
+      },
+      "scan_shape": {
+        "title": "ScanShape",
+        "description": "Prise de mesures pour des vêtements sur mesure pour un atelier à l'aide d'un réseau neuronal (IA)."
+      },
+      "lt_fest": {
+        "title": "LT Fest",
+        "description": "Une application pour le mouvement des festivals panrusses."
+      },
+      "prihozane_com": {
+        "title": "Prihozhane.com",
+        "description": "Un site web pour la vente de vêtements pour le sauna et le bain."
+      }
+    }
+  },
+  "project_card": {
+    "view_project": "Voir le projet"
+  },
+  "footer": {
+    "our_contacts": "Nos contacts",
+    "address": "45 rue Dekabristov, bureau 210-B (2ème étage)",
+    "inn": "ID Fiscal (en Russie) : "
+  },
+  "estimate_form": {
+    "title": "Estimation rapide",
+    "subtitle": "Évaluons rapidement votre tâche",
+    "name": "Nom",
+    "email": "E-mail",
+    "message": "Message"
+  }
+}

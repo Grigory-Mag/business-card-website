@@ -1,0 +1,63 @@
+{
+  "header": {
+    "main": "Home",
+    "portfolio": "Portfolio",
+    "contacts": "Contatti",
+    "discuss_project": "Discuti il progetto"
+  },
+  "hero": {
+    "title": "Sviluppo di sistemi CRM, applicazioni mobili Android e siti web",
+    "subtitle": "Elaboriamo logica e processi, design, programmazione, integrazioni, configurazioni e forniamo supporto per l'implementazione.",
+    "calculate_cost": "Calcola il costo",
+    "write_telegram": "Scrivi su Telegram"
+  },
+  "features": {
+    "development_time_title": "Tempo di sviluppo — 3 settimane",
+    "development_time_desc": "Applichiamo il tuo logo, aiutiamo a compilare prodotti/servizi, opzioni di consegna e informazioni di contatto, quindi pubblichiamo l'applicazione.",
+    "small_business_title": "Ideale per le piccole imprese",
+    "small_business_desc": "Non è necessario spendere ingenti somme di denaro o sei mesi di tempo per lo sviluppo di un'applicazione.",
+    "wide_possibilities_title": "Ampie possibilità",
+    "wide_possibilities_desc": "La versione base dell'applicazione è molto potente."
+  },
+  "portfolio_page": {
+    "title": "I nostri progetti",
+    "subtitle": "Siamo orgogliosi di ogni riga di codice e di ogni pixel del nostro lavoro.",
+    "all": "Tutti",
+    "mobile": "App mobili",
+    "crm": "CRM",
+    "web": "Siti web",
+    "portfolio_projects": {
+      "voice_sender": {
+        "title": "VoiceSender",
+        "description": "Un programma per inviare le registrazioni delle chiamate aziendali a un server remoto dell'azienda."
+      },
+      "scan_shape": {
+        "title": "ScanShape",
+        "description": "Presa delle misure per abiti su misura per un atelier tramite una rete neurale (IA)."
+      },
+      "lt_fest": {
+        "title": "LT Fest",
+        "description": "Un'applicazione per il movimento dei festival panrusso."
+      },
+      "prihozane_com": {
+        "title": "Prihozhane.com",
+        "description": "Un sito web per la vendita di abbigliamento per sauna e bagno."
+      }
+    }
+  },
+  "project_card": {
+    "view_project": "Vedi il progetto"
+  },
+  "footer": {
+    "our_contacts": "I nostri contatti",
+    "address": "Via Dekabristov, 45, ufficio 210-B (2° piano)",
+    "inn": "Partita IVA (in Russia) : "
+  },
+  "estimate_form": {
+    "title": "Stima rapida",
+    "subtitle": "Valutiamo rapidamente il tuo compito",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio"
+  }
+}

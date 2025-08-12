@@ -1,0 +1,63 @@
+{
+  "header": {
+    "main": "Início",
+    "portfolio": "Portfólio",
+    "contacts": "Contato",
+    "discuss_project": "Discutir projeto"
+  },
+  "hero": {
+    "title": "Desenvolvimento de sistemas CRM, aplicativos móveis para Android e sites",
+    "subtitle": "Elaboramos lógica e processos, design, programação, integrações, configurações e ajudamos na implementação e suporte.",
+    "calculate_cost": "Calcular custo",
+    "write_telegram": "Escrever no Telegram"
+  },
+  "features": {
+    "development_time_title": "Tempo de desenvolvimento — 3 semanas",
+    "development_time_desc": "Aplicamos seu logotipo, ajudamos a preencher produtos/serviços, opções de entrega e informações de contato, e publicamos o aplicativo.",
+    "small_business_title": "Ideal para pequenas empresas",
+    "small_business_desc": "Não é necessário gastar grandes somas de dinheiro ou meio ano de tempo no desenvolvimento de um aplicativo.",
+    "wide_possibilities_title": "Vastas possibilidades",
+    "wide_possibilities_desc": "A versão básica do aplicativo é muito capaz."
+  },
+  "portfolio_page": {
+    "title": "Nossos projetos",
+    "subtitle": "Temos orgulho de cada linha de código e cada pixel em nosso trabalho.",
+    "all": "Todos",
+    "mobile": "Aplicativos móveis",
+    "crm": "CRM",
+    "web": "Sites",
+    "portfolio_projects": {
+      "voice_sender": {
+        "title": "VoiceSender",
+        "description": "Um programa para enviar gravações de chamadas corporativas para um servidor remoto da empresa."
+      },
+      "scan_shape": {
+        "title": "ScanShape",
+        "description": "Tirando medidas para roupas sob medida para um ateliê usando uma rede neural (IA)."
+      },
+      "lt_fest": {
+        "title": "LT Fest",
+        "description": "Um aplicativo para o movimento de festivais de toda a Rússia."
+      },
+      "prihozane_com": {
+        "title": "Prihozhane.com",
+        "description": "Um site para a venda de roupas de banho e sauna."
+      }
+    }
+  },
+  "project_card": {
+    "view_project": "Ver projeto"
+  },
+  "footer": {
+    "our_contacts": "Nossos contatos",
+    "address": "Rua Dekabristov, 45, escritório 210-B (2º andar)",
+    "inn": "CNPJ/CPF (na Rússia) : "
+  },
+  "estimate_form": {
+    "title": "Orçamento rápido",
+    "subtitle": "Vamos avaliar rapidamente sua tarefa",
+    "name": "Nome",
+    "email": "E-mail",
+    "message": "Mensagem"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "header": {
+    "main": "Home",
+    "portfolio": "Portfolio",
+    "contacts": "Contacts",
+    "discuss_project": "Discuss Project"
+  },
+  "hero": {
+    "title": "Development of CRM Systems, Android Mobile Apps, and Websites",
+    "subtitle": "We craft logic and processes, design, programming, integrations, setups, and provide implementation and support.",
+    "calculate_cost": "Get a Quote",
+    "write_telegram": "Contact on Telegram"
+  },
+  "features": {
+    "development_time_title": "Development Time — 3 Weeks",
+    "development_time_desc": "We apply your logo, help fill in products/services, delivery options, and contact information, then publish the application.",
+    "small_business_title": "Ideal for Small Business",
+    "small_business_desc": "No need to spend large sums of money or half a year of time on application development.",
+    "wide_possibilities_title": "Wide Possibilities",
+    "wide_possibilities_desc": "The basic version of the application is highly capable."
+  },
+  "portfolio_page": {
+    "title": "Our Projects",
+    "subtitle": "We are proud of every line of code and every pixel in our work.",
+    "all": "All",
+    "mobile": "Mobile Apps",
+    "crm": "CRM",
+    "web": "Websites",
+    "portfolio_projects": {
+      "voice_sender": {
+        "title": "VoiceSender",
+        "description": "A program for sending corporate call recordings to a remote company server."
+      },
+      "scan_shape": {
+        "title": "ScanShape",
+        "description": "Taking measurements for custom-made clothing for an atelier using a neural network (AI)."
+      },
+      "lt_fest": {
+        "title": "LT Fest",
+        "description": "An application for the all-Russian festival movement."
+      },
+      "prihozane_com": {
+        "title": "Prihozhane.com",
+        "description": "A website for selling bathhouse and sauna apparel."
+      }
+    }
+  },
+  "project_card": {
+    "view_project": "View Project"
+  },
+  "footer": {
+    "our_contacts": "Our Contacts",
+    "address": "Dekabristov, 45, office 210-B (2nd floor)",
+    "inn": "Tax ID (in Russia) : "
+  },
+  "estimate_form": {
+    "title": "Quick Estimate",
+    "subtitle": "Let's quickly evaluate your task",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message"
+  }
+}

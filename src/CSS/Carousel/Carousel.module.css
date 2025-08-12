@@ -59,14 +59,21 @@
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
+    width: 12px; /* Немного увеличим размер */
+    height: 12px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6); /* Делаем чуть более непрозрачным */
     cursor: pointer;
-    transition: background-color 0.2s;
+    /* Добавляем тонкую темную рамку для контраста на светлом фоне */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Легкая тень для объема */
+    /* Плавный переход для всех свойств */
+    transition: all 0.3s ease;
 }
 
 .activeDot {
-    background-color: white;
+    background-color: whitesmoke; /* Активная точка - чисто белая */
+    border-color: rgba(0, 0, 0, 0.3); /* Рамка активной точки чуть темнее */
+    /* Делаем активную точку больше, чтобы она выделялась */
+    transform: scale(1.1);
 }

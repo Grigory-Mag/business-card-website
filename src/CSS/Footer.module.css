@@ -76,7 +76,7 @@
 }
 
 .contactList a:hover {
-    color: var(--white);
+    color: var(--accent-blue);
 }
 
 .socialIcons {
@@ -92,7 +92,7 @@
 }
 
 .socialIcons a:hover {
-    color: var(--white);
+    color: var(--accent-blue);
 }
 
 /* --- Разделитель и нижняя секция --- */
@@ -118,7 +118,7 @@
 }
 
 .bottomSection a:hover {
-    color: var(--white);
+    color: var(--accent-blue);
 }
 
 .bottomSection p {

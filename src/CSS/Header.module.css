@@ -28,5 +28,43 @@
 }
 
 .actions {
-    /* Пусто, так как кнопка уже имеет свои стили */
+    /* Превращает контейнер во флекс-контейнер и выстраивает его дочерние элементы в ряд */
+    display: flex;
+
+    /* Выравнивает элементы по вертикали (очень важно, если у них разная высота) */
+    align-items: center;
+
+    /* (Опционально, но рекомендуется) Создает красивый отступ между элементами */
+    gap: 16px;
+}
+
+.langSwitcher {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    background-color: var(--primary-light-bg);
+    border-radius: 20px;
+    padding: 4px;
+}
+
+.langSwitcher button {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.langSwitcher button:hover:not(:disabled) {
+    color: var(--text-primary);
+}
+
+.langSwitcher button:disabled {
+    background-color: var(--white);
+    color: var(--primary-dark);
+    cursor: default;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }

@@ -1,0 +1,63 @@
+{
+  "header": {
+    "main": "首页",
+    "portfolio": "项目作品集",
+    "contacts": "联系方式",
+    "discuss_project": "讨论项目"
+  },
+  "hero": {
+    "title": "CRM系统、安卓移动应用和网站开发",
+    "subtitle": "我们精心设计逻辑与流程、界面、编程、集成、配置，并提供实施与支持。",
+    "calculate_cost": "成本估算",
+    "write_telegram": "在Telegram上联系"
+  },
+  "features": {
+    "development_time_title": "开发周期 — 3周",
+    "development_time_desc": "我们使用您的徽标，帮助填写产品/服务、配送选项和联系信息，然后发布应用程序。",
+    "small_business_title": "小型企业的理想选择",
+    "small_business_desc": "无需花费巨额资金或半年时间进行应用开发。",
+    "wide_possibilities_title": "功能广泛",
+    "wide_possibilities_desc": "应用程序的基础版本功能非常强大。"
+  },
+  "portfolio_page": {
+    "title": "我们的项目",
+    "subtitle": "我们为工作中的每一行代码和每一个像素感到自豪。",
+    "all": "全部",
+    "mobile": "移动应用",
+    "crm": "CRM",
+    "web": "网站",
+    "portfolio_projects": {
+      "voice_sender": {
+        "title": "VoiceSender",
+        "description": "一个用于将公司通话记录发送到公司远程服务器的程序。"
+      },
+      "scan_shape": {
+        "title": "ScanShape",
+        "description": "使用神经网络（AI）为工作室量身定制服装尺寸。"
+      },
+      "lt_fest": {
+        "title": "LT Fest",
+        "description": "一个为全俄节日活动设计的应用程序。"
+      },
+      "prihozane_com": {
+        "title": "Prihozhane.com",
+        "description": "一个销售桑拿和浴室服装的网站。"
+      }
+    }
+  },
+  "project_card": {
+    "view_project": "查看项目"
+  },
+  "footer": {
+    "our_contacts": "联系我们",
+    "address": "十二月党人街45号，210-B办公室（2楼）",
+    "inn": "税号 (在俄罗斯) : "
+  },
+  "estimate_form": {
+    "title": "快速估价",
+    "subtitle": "让我们快速评估您的任务",
+    "name": "姓名",
+    "email": "电子邮件",
+    "message": "消息"
+  }
+}

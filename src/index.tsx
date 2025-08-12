@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 // import TrianglePage from "./Elements/TrianglePage";
 // import MainContainer from "./Pages/MainContainer";
 import MainPage from "./Pages/MainPage";
+import './i18n/i18n'; // Инициализируем i18next
 import PortfolioPage from "./Pages/PortfolioPage";
 
 const root = ReactDOM.createRoot(

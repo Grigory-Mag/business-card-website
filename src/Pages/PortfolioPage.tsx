@@ -12,83 +12,86 @@ import placeholder_1 from '../Images/dino.png';
 import placeholder_2 from '../Images/hitori_Gotou.jpg';
 import placeholder_3 from '../Images/the_rock.jpg';
 
+import { useCustomTranslate } from '../i18n/useCustomTranslate';
+
+const categoryKeys = ['portfolio_page.all', 'portfolio_page.mobile', 'portfolio_page.crm', 'portfolio_page.web'];
+const categoryMap = {
+    'portfolio_page.mobile': 'Мобильные приложения',
+    'portfolio_page.crm': 'CRM',
+    'portfolio_page.web': 'Веб-сайты'
+};
+
 // Обновляем ВСЕ проекты, чтобы они соответствовали интерфейсу Project
 const allProjects: Project[] = [
     {
-        id: 1, title: 'CRM для фитнес-клуба', category: 'CRM',
-        imageUrl: FitnessCrm,
-        tags: ['CRM', 'Java', 'React'],
-        detailedImages: [
-            placeholder_1,
-            placeholder_2,
-            placeholder_3
-        ],
-        description: 'Полностью кастомизированная CRM-система для управления клиентами, абонементами и расписанием тренировок. Интеграция с платежными системами и мобильным приложением.'
+        id: 1, title: 'portfolio_page.portfolio_projects.voice_sender.title', category: 'portfolio_page.crm',
+        imageUrl: FitnessCrm, tags: ['CRM', 'Java', 'Android', 'Kotlin'],
+        detailedImages: [ placeholder_1, placeholder_2, placeholder_3 ],
+        description: 'portfolio_page.portfolio_projects.voice_sender.description'
     },
     {
-        id: 2, title: 'Мобильный банк', category: 'Мобильные приложения',
-        imageUrl: MobileBank,
-        tags: ['iOS', 'Android', 'Fintech'],
-        detailedImages: [
-             placeholder_1,
-             placeholder_2,
-             placeholder_3
-        ],
-        description: 'Современное и безопасное банковское приложение для iOS и Android. Позволяет управлять счетами, совершать переводы и анализировать расходы.'
+        id: 2, title: 'portfolio_page.portfolio_projects.scan_shape.title', category: 'portfolio_page.mobile',
+        imageUrl: MobileBank, tags: ['Flutter', 'Android'],
+        detailedImages: [ placeholder_1, placeholder_2, placeholder_3 ],
+        description: 'portfolio_page.portfolio_projects.scan_shape.description'
     },
     // --- ИСПРАВЛЕНИЯ ЗДЕСЬ ---
     // Добавляем недостающие поля в остальные проекты
     {
-        id: 3, title: 'Корпоративный сайт "СтройМаш"', category: 'Веб-сайты',
+        id: 3, title: 'portfolio_page.portfolio_projects.lt_fest.title', category: 'portfolio_page.mobile',
         imageUrl: 'https://via.placeholder.com/400x300/7f8c8d/ffffff?text=Project+3',
-        tags: ['Web', 'Next.js'],
+        tags: ['Flutter', 'Android', 'iOS'],
         detailedImages: [
             placeholder_1,
             placeholder_2,
             placeholder_3
         ],
-        description: 'Информационный портал для крупной строительной компании с каталогом техники и формой обратной связи.'
+        description: 'portfolio_page.portfolio_projects.lt_fest.description'
     },
     {
-        id: 4, title: 'Приложение для доставки еды', category: 'Мобильные приложения',
+        id: 4, title: 'portfolio_page.portfolio_projects.prihozane_com.title', category: 'portfolio_page.web',
         imageUrl: FoodApp,
-        tags: ['iOS', 'Firebase'],
+        tags: ['React', 'TypeScript', 'Vite'],
         detailedImages: [
             placeholder_1,
             placeholder_2,
             placeholder_3],
-        description: 'Удобное приложение для заказа еды из местных ресторанов с отслеживанием курьера в реальном времени.'
+        description: 'portfolio_page.portfolio_projects.prihozane_com.description'
     },
-    {
-        id: 5, title: 'Система учета для ритейла', category: 'CRM',
-        imageUrl: 'https://via.placeholder.com/400x300/bdc3c7/ffffff?text=Project+5',
-        tags: ['CRM', 'PostgreSQL'],
-        detailedImages: ['https://via.placeholder.com/800x450/bdc3c7/ffffff?text=Inventory'],
-        description: 'Система для автоматизации складского учета, управления поставками и анализа продаж для розничных сетей.'
-    },
-    {
-        id: 6, title: 'Лендинг для онлайн-курсов', category: 'Веб-сайты',
-        imageUrl: 'https://via.placeholder.com/400x300/8e44ad/ffffff?text=Project+6',
-        tags: ['Web', 'Tilda'],
-        detailedImages: ['https://via.placeholder.com/800x450/8e44ad/ffffff?text=Course+Page'],
-        description: 'Продающий лендинг для запуска образовательных курсов с интеграцией платежной системы и автоматической рассылкой.'
-    },
+    // {
+    //     id: 5, title: 'Система учета для ритейла', category: categories.crm,
+    //     imageUrl: 'https://via.placeholder.com/400x300/bdc3c7/ffffff?text=Project+5',
+    //     tags: ['CRM', 'PostgreSQL'],
+    //     detailedImages: ['https://via.placeholder.com/800x450/bdc3c7/ffffff?text=Inventory'],
+    //     description: 'Система для автоматизации складского учета, управления поставками и анализа продаж для розничных сетей.'
+    // },
+    // {
+    //     id: 6, title: 'Лендинг для онлайн-курсов', category: categories.web,
+    //     imageUrl: 'https://via.placeholder.com/400x300/8e44ad/ffffff?text=Project+6',
+    //     tags: ['Web', 'Tilda'],
+    //     detailedImages: ['https://via.placeholder.com/800x450/8e44ad/ffffff?text=Course+Page'],
+    //     description: 'Продающий лендинг для запуска образовательных курсов с интеграцией платежной системы и автоматической рассылкой.'
+    // },
 ];
 
-const categories = ['Все', 'Мобильные приложения', 'CRM', 'Веб-сайты'];
+// const categories = ['Все', 'Мобильные приложения', 'CRM', 'Веб-сайты'];
 
 const PortfolioPage: React.FC = () => {
-    const [activeFilter, setActiveFilter] = useState('Все');
+    const { t } = useCustomTranslate();
+    const [activeFilter, setActiveFilter] = useState(categoryKeys[0]);
     const [filteredProjects, setFilteredProjects] = useState<Project[]>(allProjects);
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
     useEffect(() => {
-        if (activeFilter === 'Все') {
+        // Если выбрана категория "Все"
+        if (activeFilter === categoryKeys[0]) {
             setFilteredProjects(allProjects);
         } else {
+            // Сравниваем КЛЮЧ категории проекта с АКТИВНЫМ КЛЮЧОМ фильтра
             const filtered = allProjects.filter(p => p.category === activeFilter);
             setFilteredProjects(filtered);
         }
+        // Зависимость теперь только от activeFilter, так как t() не участвует в логике
     }, [activeFilter]);
 
     const handleProjectClick = (project: Project) => {
@@ -102,31 +105,34 @@ const PortfolioPage: React.FC = () => {
     return (
         <div className={styles.pageWrapper}>
             <header className={styles.header}>
-                <h1>Наши проекты</h1>
-                <p>Мы гордимся каждой строчкой кода и каждым пикселем в наших работах</p>
+                <h1>{t('portfolio_page.title')}</h1>
+                <p>{t('portfolio_page.subtitle')}</p>
             </header>
 
             <div className={styles.filterContainer}>
-                {categories.map(category => (
+                {/* 5. Переводим ключи категорий в момент рендера */}
+                {categoryKeys.map(categoryKey => (
                     <button
-                        key={category}
-                        className={`${styles.filterButton} ${activeFilter === category ? styles.active : ''}`}
-                        onClick={() => setActiveFilter(category)}
+                        key={categoryKey}
+                        className={`${styles.filterButton} ${activeFilter === categoryKey ? styles.active : ''}`}
+                        onClick={() => setActiveFilter(categoryKey)}
                     >
-                        {category}
+                        {t(categoryKey)} {/* <-- ПЕРЕВОД ЗДЕСЬ */}
                     </button>
                 ))}
             </div>
 
             <main className={styles.grid}>
                 {filteredProjects.map(project => (
-                    <ProjectCard key={project.id} project={project} onClick={() => handleProjectClick(project)} />
+                    <ProjectCard
+                        key={project.id}
+                        project={project} // Передаем проект с ключами
+                        onClick={() => handleProjectClick(project)}
+                    />
                 ))}
             </main>
 
-            {/* Рендерим модальное окно */}
             <Modal isOpen={!!selectedProject} onClose={handleCloseModal}>
-                {/* Убеждаемся, что проект выбран, прежде чем рендерить детали */}
                 {selectedProject && <ProjectDetailModal project={selectedProject} />}
             </Modal>
         </div>

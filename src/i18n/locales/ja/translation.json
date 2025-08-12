@@ -1,0 +1,63 @@
+{
+  "header": {
+    "main": "ホーム",
+    "portfolio": "ポートフォリオ",
+    "contacts": "連絡先",
+    "discuss_project": "プロジェクト相談"
+  },
+  "hero": {
+    "title": "CRMシステム、Androidモバイルアプリ、ウェブサイトの開発",
+    "subtitle": "ロジックとプロセス、デザイン、プログラミング、統合、設定を策定し、導入とサポートを支援します。",
+    "calculate_cost": "料金を見積もる",
+    "write_telegram": "Telegramで連絡"
+  },
+  "features": {
+    "development_time_title": "開発期間 — 3週間",
+    "development_time_desc": "貴社のロゴを配置し、商品/サービス、配送オプション、連絡先情報の入力を支援し、アプリケーションを公開します。",
+    "small_business_title": "中小企業に最適",
+    "small_business_desc": "アプリケーション開発に多額の費用や半年以上の時間を費やす必要はありません。",
+    "wide_possibilities_title": "幅広い可能性",
+    "wide_possibilities_desc": "基本バージョンのアプリケーションでも多くのことが可能です。"
+  },
+  "portfolio_page": {
+    "title": "私たちのプロジェクト",
+    "subtitle": "私たちは、仕事における一行一行のコードと一つ一つのピクセルに誇りを持っています。",
+    "all": "すべて",
+    "mobile": "モバイルアプリ",
+    "crm": "CRM",
+    "web": "ウェブサイト",
+    "portfolio_projects": {
+      "voice_sender": {
+        "title": "VoiceSender",
+        "description": "企業の通話記録をリモートサーバーに送信するためのプログラムです。"
+      },
+      "scan_shape": {
+        "title": "ScanShape",
+        "description": "ニューラルネットワーク（AI）を使用して、アトリエでオーダーメイド服の寸法を測定します。"
+      },
+      "lt_fest": {
+        "title": "LT Fest",
+        "description": "全ロシアのフェスティバル運動のためのアプリケーションです。"
+      },
+      "prihozane_com": {
+        "title": "Prihozhane.com",
+        "description": "サウナ・バス用のアパレルを販売するウェブサイトです。"
+      }
+    }
+  },
+  "project_card": {
+    "view_project": "プロジェクトを見る"
+  },
+  "footer": {
+    "our_contacts": "連絡先",
+    "address": "デカブリストフ通り45番地、210-B号室（2階）",
+    "inn": "納税者番号 (ロシア国内) : "
+  },
+  "estimate_form": {
+    "title": "クイック見積もり",
+    "subtitle": "あなたのタスクを迅速に評価しましょう",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "message": "メッセージ"
+  }
+}

@@ -4,6 +4,7 @@ import Button from '../Elements/Button';
 import Icon from "./Icon";
 import {FaTelegramPlane} from "react-icons/fa";
 import MobileApp from '../Images/MobileApp.jpg'
+import { useCustomTranslate } from '../i18n/useCustomTranslate';
 // Функция для обработки клика
 const handleTelegramClick = () => {
     window.open('https://t.me/rybvladislav', '_blank');
@@ -14,20 +15,23 @@ interface HeaderProps {
 }
 
 const Hero: React.FC<HeaderProps> = ({ onOpenModal }) => {
+
+    const { t } = useCustomTranslate();
+
     return (
         <section className={styles.hero}>
             <div className={styles.content}>
                 <div className={styles.breadcrumbs}>
                     {/*<a href="/">Главная</a> <span>Мобильные приложения</span>*/}
                 </div>
-                <h1>Разработка CRM систем, мобильных приложений Android и сайтов</h1>
-                <p>Прорабатываем логику и процессы, дизайн, программирование, интеграции, настройки, помогаем с внедрением и поддержкой</p>
+                <h1>{t('hero.title')}</h1>
+                <p>{t('hero.subtitle')}</p>
                 <div className={styles.buttons}>
-                    <Button variant="primary" onClick={onOpenModal}>Рассчитать стоимость</Button>
+                    <Button variant="primary" onClick={onOpenModal}>{t('hero.calculate_cost')}</Button>
 
                     <Button variant="secondary" onClick={handleTelegramClick}>
                         <Icon icon={FaTelegramPlane} /> {/* Добавляем иконку */}
-                        <span>Написать в телеграм</span> {/* Оборачиваем текст в span для стилизации */}
+                        <span>{t('hero.write_telegram')}</span> {/* Оборачиваем текст в span для стилизации */}
                     </Button>
 
                 </div>

@@ -1,0 +1,63 @@
+{
+  "header": {
+    "main": "Inicio",
+    "portfolio": "Portafolio",
+    "contacts": "Contacto",
+    "discuss_project": "Discutir proyecto"
+  },
+  "hero": {
+    "title": "Desarrollo de sistemas CRM, aplicaciones móviles para Android y sitios web",
+    "subtitle": "Elaboramos la lógica y los procesos, el diseño, la programación, las integraciones, las configuraciones y ayudamos con la implementación y el soporte.",
+    "calculate_cost": "Calcular costo",
+    "write_telegram": "Escribir en Telegram"
+  },
+  "features": {
+    "development_time_title": "Tiempo de desarrollo — 3 semanas",
+    "development_time_desc": "Colocamos su logotipo, ayudamos a completar productos/servicios, opciones de entrega e información de contacto, y luego publicamos la aplicación.",
+    "small_business_title": "Ideal para pequeñas empresas",
+    "small_business_desc": "No es necesario gastar grandes sumas de dinero ni medio año de tiempo en el desarrollo de una aplicación.",
+    "wide_possibilities_title": "Amplias posibilidades",
+    "wide_possibilities_desc": "La versión básica de la aplicación es muy capaz."
+  },
+  "portfolio_page": {
+    "title": "Nuestros proyectos",
+    "subtitle": "Estamos orgullosos de cada línea de código y cada píxel de nuestro trabajo.",
+    "all": "Todos",
+    "mobile": "Aplicaciones móviles",
+    "crm": "CRM",
+    "web": "Sitios web",
+    "portfolio_projects": {
+      "voice_sender": {
+        "title": "VoiceSender",
+        "description": "Un programa para enviar grabaciones de llamadas corporativas a un servidor remoto de la empresa."
+      },
+      "scan_shape": {
+        "title": "ScanShape",
+        "description": "Toma de medidas para ropa a medida para un taller mediante una red neuronal (IA)."
+      },
+      "lt_fest": {
+        "title": "LT Fest",
+        "description": "Una aplicación para el movimiento de festivales de toda Rusia."
+      },
+      "prihozane_com": {
+        "title": "Prihozhane.com",
+        "description": "Un sitio web para la venta de ropa para sauna y baño."
+      }
+    }
+  },
+  "project_card": {
+    "view_project": "Ver proyecto"
+  },
+  "footer": {
+    "our_contacts": "Nuestros contactos",
+    "address": "Calle Dekabristov, 45, oficina 210-B (2º piso)",
+    "inn": "NIF (en Rusia) : "
+  },
+  "estimate_form": {
+    "title": "Estimación rápida",
+    "subtitle": "Evaluemos rápidamente su tarea",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje"
+  }
+}

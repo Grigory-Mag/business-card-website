@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../CSS/ProjectCard.module.css';
 import { FaArrowRight } from 'react-icons/fa';
 import Icon from "./Icon";
+import { useCustomTranslate } from '../i18n/useCustomTranslate';
 
 // 1. Расширяем интерфейс
 export interface Project {
@@ -22,6 +23,7 @@ interface ProjectCardProps {
 
 // href={`/portfolio/${project.id}`}
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
+    const { t } = useCustomTranslate();
     return (
         <div className={styles.card} onClick={onClick}>
             <img src={project.imageUrl} alt={project.title} className={styles.cardImage} />
@@ -29,9 +31,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
                 <div className={styles.tags}>
                     {project.tags.map(tag => <span key={tag} className={styles.tag}>{tag}</span>)}
                 </div>
-                <h3 className={styles.title}>{project.title}</h3>
+                <h3 className={styles.title}>{t(project.title)}</h3>
                 <div className={styles.link}>
-                    Смотреть проект <Icon icon={FaArrowRight} />
+                    {t('project_card.view_project')} <Icon icon={FaArrowRight} />
                 </div>
             </div>
         </div>

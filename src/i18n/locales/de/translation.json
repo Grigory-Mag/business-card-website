@@ -1,0 +1,63 @@
+{
+  "header": {
+    "main": "Startseite",
+    "portfolio": "Portfolio",
+    "contacts": "Kontakt",
+    "discuss_project": "Projekt besprechen"
+  },
+  "hero": {
+    "title": "Entwicklung von CRM-Systemen, mobilen Android-Apps und Websites",
+    "subtitle": "Wir erarbeiten Logik und Prozesse, Design, Programmierung, Integrationen, Konfigurationen und unterstützen bei Implementierung und Support.",
+    "calculate_cost": "Kosten berechnen",
+    "write_telegram": "In Telegram schreiben"
+  },
+  "features": {
+    "development_time_title": "Entwicklungszeit — 3 Wochen",
+    "development_time_desc": "Wir fügen Ihr Logo hinzu, helfen beim Ausfüllen von Produkten/Dienstleistungen, Lieferoptionen und Kontaktinformationen und veröffentlichen die Anwendung.",
+    "small_business_title": "Ideal für Kleinunternehmen",
+    "small_business_desc": "Es ist nicht nötig, hohe Summen oder ein halbes Jahr Zeit in die Anwendungsentwicklung zu investieren.",
+    "wide_possibilities_title": "Vielfältige Möglichkeiten",
+    "wide_possibilities_desc": "Die Basisversion der Anwendung kann sehr viel."
+  },
+  "portfolio_page": {
+    "title": "Unsere Projekte",
+    "subtitle": "Wir sind stolz auf jede Codezeile und jeden Pixel in unserer Arbeit.",
+    "all": "Alle",
+    "mobile": "Mobile Apps",
+    "crm": "CRM",
+    "web": "Websites",
+    "portfolio_projects": {
+      "voice_sender": {
+        "title": "VoiceSender",
+        "description": "Ein Programm zum Senden von Aufzeichnungen von Firmengesprächen an einen externen Firmenserver."
+      },
+      "scan_shape": {
+        "title": "ScanShape",
+        "description": "Maßnehmen für maßgeschneiderte Kleidung für ein Atelier mithilfe eines neuronalen Netzes (KI)."
+      },
+      "lt_fest": {
+        "title": "LT Fest",
+        "description": "Eine Anwendung für die gesamtrussische Festivalbewegung."
+      },
+      "prihozane_com": {
+        "title": "Prihozhane.com",
+        "description": "Eine Website für den Verkauf von Sauna- und Badebekleidung."
+      }
+    }
+  },
+  "project_card": {
+    "view_project": "Projekt ansehen"
+  },
+  "footer": {
+    "our_contacts": "Unsere Kontakte",
+    "address": "Dekabristov, 45, Büro 210-B (2. Stock)",
+    "inn": "Steuer-ID (in Russland) : "
+  },
+  "estimate_form": {
+    "title": "Schnelle Schätzung",
+    "subtitle": "Lassen Sie uns Ihre Aufgabe schnell bewerten",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht"
+  }
+}

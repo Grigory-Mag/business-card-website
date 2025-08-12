@@ -3,6 +3,7 @@ import styles from '../CSS/Features.module.css';
 import Icon from "./Icon";
 import {FaBriefcase, FaChartBar, FaRegClock} from "react-icons/fa";
 import {IconType} from "react-icons";
+import { useCustomTranslate } from '../i18n/useCustomTranslate';
 
 interface FeatureProps {
     icon: IconType;
@@ -23,21 +24,22 @@ const Feature: React.FC<FeatureProps> = ({ icon, title, description }) => {
 };
 
 const Features: React.FC = () => {
+    const { t } = useCustomTranslate();
     const featuresData: FeatureProps[] = [
         {
             icon: FaRegClock,
-            title: 'Срок разработки — 3 недели',
-            description: 'Ставим ваш логотип, помогаем заполнить товары/услуги, варианты доставки и контактную информацию + публикуем приложение',
+            title: t('features.development_time_title'),
+            description: t('features.development_time_desc'),
         },
         {
             icon: FaBriefcase,
-            title: 'Идеально для малого бизнеса',
-            description: 'Не нужно тратить 1.5+ млн. рублей и полгода / год времени на разработку приложения',
+            title: t('features.small_business_title'),
+            description: t('features.small_business_desc'),
         },
         {
             icon: FaChartBar,
-            title: 'Широкие возможности',
-            description: 'Базовая версия приложения может очень много',
+            title: t('features.wide_possibilities_title') ,
+            description: t('features.wide_possibilities_desc'),
         },
     ];
 

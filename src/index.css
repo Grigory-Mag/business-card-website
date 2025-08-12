@@ -25,6 +25,7 @@
   --white: #ffffff;
   --border-color: #dce4ec;
   --container-width: 1200px; /* Ширина основного контейнера */
+  --accent-blue: #85c1e9;
 }
 
 body {
@@ -50,6 +51,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 
 .container {
   max-width: var(--container-width);
