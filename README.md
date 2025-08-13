@@ -68,12 +68,12 @@
 
 1.  **Клонируйте репозиторий:**
     ```bash
-    git clone https://github.com/your-username/your-repository-name.git
+    git clone https://github.com/Grigory-Mag/business-card-website.git
     ```
 
 2.  **Перейдите в папку проекта:**
     ```bash
-    cd your-repository-name
+    cd business-card-website
     ```
 
 3.  **Установите все зависимости:**
